@@ -1,6 +1,8 @@
 Manducos Shop 🔥
+
 Proyecto nacido de un desafío de Bootstrap de Desafío Latam y evolucionado con nuevas tecnologías.
 Manducos Shop ofrece una experiencia visual y narrativa que conecta con el deseo, la estética y la funcionalidad, ahora con interactividad real gracias a JavaScript.
+
 🚀 Evolución del proyecto
 - Versión inicial (Bootstrap): diseño responsivo, hero, cards y subpáginas temáticas.
 - Versión mejorada (JavaScript):
@@ -8,6 +10,7 @@ Manducos Shop ofrece una experiencia visual y narrativa que conecta con el deseo
 - Validación de correo con doble comprobación en el formulario de suscripción.
 - Modo oscuro con botón en el header.
 - Multipágina: productos separados (Lencería, Juguetes, Aceites).
+
 🛠️ Tecnologías utilizadas
 - HTML5
 - CSS3
@@ -15,6 +18,7 @@ Manducos Shop ofrece una experiencia visual y narrativa que conecta con el deseo
 - Font Awesome
 - Google Fonts
 - JavaScript (DOM, eventos, validación)
+
 🎯 ¿Qué destaca?
 - Diseño responsivo con Bootstrap.
 - Cards visuales con narrativa emocional.
@@ -23,15 +27,18 @@ Manducos Shop ofrece una experiencia visual y narrativa que conecta con el deseo
 - Validación de formularios y retroalimentación visual.
 - Modo oscuro para mejorar la experiencia del usuario.
 - Footer con redes sociales y branding personal.
+
 📁 Estructura del proyecto
 - index.html: Página principal.
 - assets/img/: Imágenes del catálogo.
 - assets/css/stilo.css: Estilos personalizados.
 - assets/script.js: Lógica de interactividad (productos, formulario, modo oscuro).
 - assets/page/: Subpáginas de productos.
+
 ✍️ Autor
 Fabricio EAP — Desarrollador web en formación, consultor creativo y narrador visual.
 Exploro el diseño como herramienta emocional y comercial, integrando estética, disciplina y storytelling.
 Este proyecto refleja mi aprendizaje: de un desafío inicial con Bootstrap a una tienda online interactiva con JavaScript.
+
 🌐 Demo en GitHub Pages
 👉 https://feap89.github.io/manducos-shop
