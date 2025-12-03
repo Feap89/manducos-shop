@@ -4,57 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Manducos Shop</title>
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/9eb5b732f3.js" crossorigin="anonymous"></script>
+  <!-- Estilos personalizados -->
   <link rel="stylesheet" href="assets/css/stilo.css">
 </head>
-<body style="font-family: 'Roboto', sans-serif;">
+<body>
 
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center text-center">
+    <div class="hero-content">
+      <h1 class="hero-title">Bienvenido a Manducos Shop</h1>
+      <p class="hero-subtitle">Sensualidad hecha diseño, al alcance de un clic</p>
+      <a href="#productos" class="btn btn-success btn-lg mt-3">Descubre más</a>
+    </div>
+  </section>
+
+  <!-- Header -->
   <header class="bg-success text-white text-center py-4">
     <h1 class="fw-medium">Manducos Shop</h1>
     <p class="fw-light">Tú imaginas, nosotros lo tenemos</p>
+    <button id="toggle-theme" class="btn btn-light mt-3">
+      <i class="fas fa-moon"></i> Modo Oscuro
+    </button>
   </header>
 
-  <main class="container my-5">
+  <!-- Productos -->
+  <main id="productos" class="container my-5">
     <div class="row g-4">
 
+      <!-- Producto 1 -->
       <div class="col-12 col-md-4">
         <div class="card h-100">
-         <img src="assets/img/Sexshop1.jpg" class="img-producto" alt="Lencería roja">
+          <img src="assets/img/Sexshop1.jpg" class="img-fluid img-producto" alt="Lencería roja">
           <div class="card-body">
             <h5 class="card-title">Lencería</h5>
             <p class="card-text text-secondary">Diseño sensual y cómodo para cualquier ocasión.</p>
             <p class="text-success fw-bold">Para todos los gustos</p>
-            <p><i class="fas fa-map-marker-alt"></i>Manducos Site</p>
+            <p><i class="fas fa-map-marker-alt"></i> Manducos Site</p>
             <a href="assets/page/lenceriaroja.html" class="btn btn-success w-100">Echa un vistazo</a>
           </div>
         </div>
       </div>
 
+      <!-- Producto 2 -->
       <div class="col-12 col-md-4">
         <div class="card h-100">
-          <img src="assets/img/Sexshop2.jpg" class="img-producto" alt="Juguete discreto">
-
+          <img src="assets/img/Sexshop2.jpg" class="img-fluid img-producto" alt="Juguete discreto">
           <div class="card-body">
             <h5 class="card-title">Juguetes</h5>
             <p class="card-text text-secondary">Ideal para explorar nuevas sensaciones.</p>
             <p class="text-success fw-bold">Atrévete a jugar</p>
-            <p><i class="fas fa-map-marker-alt"></i>Manducos Site</p>
+            <p><i class="fas fa-map-marker-alt"></i> Manducos Site</p>
             <a href="assets/page/juguetes.html" class="btn btn-success w-100">Tenemos de todo</a>
           </div>
         </div>
       </div>
 
+      <!-- Producto 3 -->
       <div class="col-12 col-md-4">
         <div class="card h-100">
-          <img src="assets/img/Sexshop4.jpg" class="img-producto" alt="Aceite de masajes">
-
+          <img src="assets/img/Sexshop4.jpg" class="img-fluid img-producto" alt="Aceite de masajes">
           <div class="card-body">
             <h5 class="card-title">Aceites</h5>
             <p class="card-text text-secondary">Relajante y aromático, perfecto para compartir.</p>
             <p class="text-success fw-bold">En cualquier momento</p>
-            <p><i class="fas fa-map-marker-alt"></i>Manducos Site</p>
+            <p><i class="fas fa-map-marker-alt"></i> Manducos Site</p>
             <a href="assets/page/aceites.html" class="btn btn-success w-100">Vive la experiencia</a>
           </div>
         </div>
@@ -63,47 +82,50 @@
     </div>
   </main>
 
-  <section class="container mb-5">
-    <h2 class="text-center mb-4">Recibe nuestras ofertas</h2>
-    <form>
-      <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Nombre">
-      </div>
-      <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Correo electrónico">
-      </div>
-      <button type="submit" class="btn btn-success w-100">Suscribirme</button>
-    </form>
-  </section>
+<!-- Suscripción -->
+<section class="container mb-5">
+  <h2 class="text-center mb-4">Recibe nuestras ofertas</h2>
+  <form id="suscripcionForm">
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Nombre" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+      <div id="emailMessage" class="mt-2"></div>
+    </div>
+    <div class="mb-3">
+      <input type="email" class="form-control" id="confirmEmail" placeholder="Confirmar correo electrónico" required>
+      <div id="confirmMessage" class="mt-2"></div>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Suscribirme</button>
+  </form>
+  <!-- Mensaje final -->
+  <div id="successMessage" class="text-center mt-3"></div>
+</section>
 
-<footer style="
-  color: white;
-  padding: 0;
-  position: relative;
-">
+
+  <!-- Footer -->
+<footer style="color: white; padding:0; position: relative;">
   <div style="background-color: rgba(0, 0, 0, 0.7); padding: 2rem;">
     <div class="container text-center">
-      <p class="mb-3 fs-5">Conéctate con Manducos</p>
-      
-      <div class="mb-4">
-        <a href="https://www.instagram.com/FABRICIOEAP" target="_blank" class="text-white me-3 social-icon">
-          <i class="fab fa-instagram fa-lg"></i>
-        </a>
-        <a href="https://www.facebook.com/FABRICIOEAP" target="_blank" class="text-white me-3 social-icon">
-          <i class="fab fa-facebook-f fa-lg"></i>
-        </a>
-        <a href="https://x.com/FABRICIOEAP" target="_blank" class="text-white me-3 social-icon">
-          <i class="fab fa-x-twitter fa-lg"></i>
-        </a>
-        <a href="feapjiap@gmail.com" class="text-white social-icon">
-          <i class="fas fa-envelope fa-lg"></i>
-        </a>
-      </div>
-
-      <p class="small mb-0">&copy; 2025 Manducos Shop. Sensualidad hecha diseño.</p>
+      <p class="mb-3 fs-5">Síguenos en nuestras redes sociales</p>
+      <!-- Íconos de redes sociales -->
+      <a href="https://facebook.com" target="_blank" class="text-white me-3">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-white me-3">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="text-white">
+        <i class="fab fa-twitter fa-lg"></i>
+      </a>
+      <!-- Texto final -->
+      <p class="small mb-0 mt-3">&copy; 2025 Manducos Shop. Sensualidad hecha diseño.</p>
     </div>
   </div>
 </footer>
 
+  <!-- Scripts -->
+  <script src="assets/script.js"></script>
 </body>
 </html>

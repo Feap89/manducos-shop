@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/stilo.css">
   <script src="https://kit.fontawesome.com/9eb5b732f3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="../../assets/css/stilo.css">
+  <link rel="stylesheet" href="../css/stilo.css">
 </head>
 <body class="bg-light" style="font-family: 'Roboto', sans-serif;">
 
@@ -20,76 +19,72 @@
 
   <div class="container py-5 px-3">
     <h1 class="text-center text-danger mb-4">Lencería</h1>
-    <p class="text-center text-muted mb-5">Diseños que combinan sensualidad, comodidad y elegancia. Elige el que más te guste.</p>
+    <p class="text-center text-muted mb-5">Diseños que combinan sensualidad, comodidad y elegancia.</p>
 
     <div class="row gx-4 gy-4">
+      <!-- Producto 1 -->
       <div class="col-md-4">
-        <div class="card h-100">
+        <div class="card h-100 producto">
           <img src="../img/lenceria1.jpg" class="img-producto" alt="Lencería roja">
           <div class="card-body text-center">
             <h5 class="mt-2">Diseño clásico</h5>
-            <p class="text-muted">
-            <i class="fas fa-map-marker-alt"></i> Manducos Site | 💲15</p>
-            <p class="text-secondary fst-italic">Evocan elegancia sin esfuerzo, pensada para quienes dominan el arte de la insinuación.</p>
-            <a href="#" class="btn btn-success w-100">Comprar ahora</a>
+            <p class="text-muted">Precio: $<span class="price">15000</span></p>
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <button class="btn-minus btn btn-outline-success">-</button>
+              <span class="quantity mx-3">1</span>
+              <button class="btn-plus btn btn-outline-success">+</button>
+            </div>
+            <p>Total a pagar: $<span class="total">15000</span></p>
           </div>
         </div>
       </div>
 
+      <!-- Producto 2 -->
       <div class="col-md-4">
-        <div class="card h-100">
+        <div class="card h-100 producto">
           <img src="../img/lenceria2.jpg" class="img-producto" alt="Lencería moderna">
           <div class="card-body text-center">
             <h5 class="mt-2">Estilo moderno</h5>
-            <i class="fas fa-map-marker-alt"></i> Manducos Site | 💲18</p>
-            <p class="text-secondary fst-italic">Diseño atrevido, cortes precisos. Ideal para quienes viven su sensualidad sin pedir permiso.</p>
-            <a href="#" class="btn btn-success w-100">Comprar ahora</a>
+            <p class="text-muted">Precio: $<span class="price">18000</span></p>
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <button class="btn-minus btn btn-outline-success">-</button>
+              <span class="quantity mx-3">1</span>
+              <button class="btn-plus btn btn-outline-success">+</button>
+            </div>
+            <p>Total a pagar: $<span class="total">18000</span></p>
           </div>
         </div>
       </div>
 
+      <!-- Producto 3 -->
       <div class="col-md-4">
-        <div class="card h-100">
+        <div class="card h-100 producto">
           <img src="../img/lenceria3.jpg" class="img-producto" alt="Lencería de calidad">
           <div class="card-body text-center">
             <h5 class="mt-2">Alta calidad</h5>
-            <i class="fas fa-map-marker-alt"></i> Manducos Site | 💲20</p>
-            <p class="text-secondary fst-italic">Textura suave, costura impecable. Se siente como una segunda piel que te empodera.</p>
-            <a href="#" class="btn btn-success w-100">Comprar ahora</a>
+            <p class="text-muted">Precio: $<span class="price">20000</span></p>
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <button class="btn-minus btn btn-outline-success">-</button>
+              <span class="quantity mx-3">1</span>
+              <button class="btn-plus btn btn-outline-success">+</button>
+            </div>
+            <p>Total a pagar: $<span class="total">20000</span></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <footer style="
-  color: white;
-  padding: 0;
-  position: relative;
-">
-  <div style="background-color: rgba(0, 0, 0, 0.7); padding: 2rem;">
-    <div class="container text-center">
-      <p class="mb-3 fs-5">Conéctate con Manducos</p>
-      
-      <div class="mb-4">
-        <a href="https://www.instagram.com/tuusuario" target="_blank" class="text-white me-3 social-icon">
-          <i class="fab fa-instagram fa-lg"></i>
-        </a>
-        <a href="https://www.facebook.com/tuusuario" target="_blank" class="text-white me-3 social-icon">
-          <i class="fab fa-facebook-f fa-lg"></i>
-        </a>
-        <a href="https://twitter.com/tuusuario" target="_blank" class="text-white me-3 social-icon">
-          <i class="fab fa-x-twitter fa-lg"></i>
-        </a>
-        <a href="mailto:manducos@email.com" class="text-white social-icon">
-          <i class="fas fa-envelope fa-lg"></i>
-        </a>
+  <footer style="color: white; padding:0; position: relative;">
+    <div style="background-color: rgba(0, 0, 0, 0.7); padding: 2rem;">
+      <div class="container text-center">
+        <p class="mb-3 fs-5">Conéctate con Manducos</p>
+        <p class="small mb-0">&copy; 2025 Manducos Shop. Sensualidad hecha diseño.</p>
       </div>
-
-      <p class="small mb-0">&copy; 2025 Manducos Shop. Sensualidad hecha diseño.</p>
     </div>
-  </div>
-</footer>
+  </footer>
 
+  <!-- Script con ruta corregida -->
+  <script src="../script.js"></script>
 </body>
 </html>
